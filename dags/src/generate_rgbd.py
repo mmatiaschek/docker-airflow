@@ -37,7 +37,7 @@ def fuse_into_rgbd(ds, artifact=None, base_data_path=None, **kwargs):
     if not os.path.exists(output_path):
         os.makedirs(output_path)
         
-    with open(output_path + '/' + artifact[:-3] + '.rgbd', 'wb') as f:
+    with open(output_path + '/' + artifact[:-4] + '.rgbd', 'wb') as f:
         pickle.dump(rgbd, f)     
     
     
