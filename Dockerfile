@@ -64,6 +64,8 @@ RUN set -ex \
 	&& pip install 'SQLAlchemy==1.3.15' \
 	&& pip install 'Pillow==8.0.1' \
 	&& pip install 'azureml-sdk==1.18.0' \
+	&& pip install 'pyntcloud' \
+	&& pip install torch==1.7.0+cpu torchvision==0.8.1+cpu -f https://download.pytorch.org/whl/torch_stable.html \
     && if [ -n "${PYTHON_DEPS}" ]; then pip install ${PYTHON_DEPS}; fi \
     && apt-get purge --auto-remove -yqq $buildDeps \
     && apt-get autoremove -yqq --purge \
