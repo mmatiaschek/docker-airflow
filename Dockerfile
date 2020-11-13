@@ -63,6 +63,7 @@ RUN set -ex \
     && pip install 'redis==3.2' \
 	&& pip install 'SQLAlchemy==1.3.15' \
 	&& pip install 'Pillow==8.0.1' \
+	&& pip install 'azureml-sdk==1.18.0' \
     && if [ -n "${PYTHON_DEPS}" ]; then pip install ${PYTHON_DEPS}; fi \
     && apt-get purge --auto-remove -yqq $buildDeps \
     && apt-get autoremove -yqq --purge \
