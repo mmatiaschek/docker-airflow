@@ -1,6 +1,3 @@
-import sys
-sys.path.append('/usr/local/airflow/.local/lib/python3.7/site-packages/')
-
 from PIL import Image, ImageOps
 import numpy as np
 import pandas as pd
