@@ -1,0 +1,11 @@
+Color camera intrinsic:
+0.90448576 1.61007471 0.50224591 0.5026263
+Depth camera intrinsic:
+0.97198214 1.23976818 0.49004464 0.4904045
+Depth camera position:
+0.0 0.0 0.0
+
+# values from Lubos' file
+fu        fv        u0       v0
+217.724;  217.724;  109.77;  86.3112;
+divide u values by 224 and v values by 176 to obtain calibration
