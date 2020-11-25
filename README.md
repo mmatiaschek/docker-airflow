@@ -11,3 +11,6 @@ For now, we only support **LocalExecutor** :
 
     docker-compose -f docker-compose-LocalExecutor.yml up -d
 
+## Proof of concept architecture
+
+![poc-arch](airflow-poc.png)
